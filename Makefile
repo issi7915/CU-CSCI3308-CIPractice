@@ -30,5 +30,5 @@ clean:
 	$(RM) geometry_test
 	$(RM) *~
 
-newmake: geometry_test.c geometry.c
+test: geometry_test.c geometry.c
 	./geometry_test
