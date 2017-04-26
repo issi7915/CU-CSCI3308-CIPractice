@@ -21,16 +21,22 @@ START_TEST(test_2d_eq)
     coord_2d_t a;
     coord_2d_t b;
 
-    a.x = b.x = 0;
-    a.y = b.y = 0;
+    a.x = 0;
+    b.x = 0;
+    a.y = 0;
+    b.y = 0;
     ck_assert(coord_2d_eq(&a, &b));
 
-    a.x = b.x = 9.99;
-    a.y = b.y = 9.99;
+    a.x = 9.99;
+    b.x = 9.99;
+    a.y = 9.99;
+    b.y = 9.99;
     ck_assert(coord_2d_eq(&a, &b));
 
-    a.x = b.x = 3.33;
-    a.y = b.y = 9.99;
+    a.x = 3.33;
+    b.x = 3.33;
+    a.y = 9.99;
+    b.y = 9.99;
     ck_assert(coord_2d_eq(&a, &b));
 
     a.x = 3.33;
